@@ -1,0 +1,10 @@
+desgin-pattern-doc.txt
+========================= SINGLE TON =========================
+
+Đảm bảo chỉ tạo ra 1 instance duy nhất có thể sử dụng ở khắp nơi
+VD: logger, config file, cache trên 1 file
+
+gồm 1 private static propety và 1 private constructor 1 hàm public static getInstance
+
+trong multi threading nếu như dùng lazy sẽ gặp 1 vấn đề sẽ tạo ra 2 đối tượng unique
+
